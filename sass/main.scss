@@ -1,0 +1,294 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.tabs-effect {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .nav-tabs1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+      grid-template-rows: 50% 50% !important;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus {
+      border-width: 0;
+    }
+    .data12 {
+      color: white;
+      font-size: 19px;
+    }
+    .resource {
+      background-color: #ffffff59;
+      opacity: 1.3;
+      border-top-left-radius: 300px;
+      height: 60vh;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      width: 40vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .timeline {
+      margin: 7px 70px;
+
+      .we-do {
+        position: fixed !important;
+        text-align: end;
+        position: relative;
+        top: 73px;
+        left: 335px;
+        font-size: 73px;
+        color: #000;
+        // @media (min-width:300px) and (max-width:768px) {
+        //    font-size: 22px;
+
+        // }
+      }
+    }
+    .timeline .nav-tabs {
+      position: fixed !important;
+      border-left: solid 2px orange;
+      height: 225px;
+      position: relative;
+      top: 258px;
+      display: grid !important;
+    }
+    .vertical {
+      transform: rotate(-90deg);
+      transform-origin: right top 0;
+      right: 99%;
+      color: orange;
+      font-size: 13px;
+      text-transform: uppercase;
+      cursor: vertical-text;
+      position: absolute;
+      display: block;
+      height: auto;
+      direction: rtl;
+      z-index: 11;
+    }
+    .text {
+      font-size: 18px;
+      color: black;
+      font-weight: 600;
+      position: absolute;
+      bottom: -142px;
+      height: calc(100% - 40px);
+      left: -24px;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      h3 {
+        font-size: 36px;
+      }
+    }
+
+    .nav > li > a {
+      position: relative;
+      display: block;
+      bottom: 16px;
+      padding: 10px 35px;
+    }
+    .nav-tabs {
+      border: none;
+    }
+    .nav-tabs > li > a {
+      border: none;
+      color: #666;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li > a:hover {
+      border: none;
+      color: #4285f4 !important;
+      background: transparent;
+    }
+    .nav-tabs > li > a::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      bottom: 1px;
+      transition: all 250ms ease 0s;
+      transform: scale(0);
+    }
+    .nav-tabs > li.active > a::after,
+    .nav-tabs > li:hover > a::after {
+      transform: scale(1);
+    }
+    .tab-nav > li > a::after {
+      color: #fff;
+    }
+    .nav-tabs::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+    .nav-tabs {
+      display: inline-flex;
+      .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:focus,
+      .nav-tabs > li.active > a:hover {
+        border-width: 0;
+      }
+      .nav-tabs > li > a {
+        border: none;
+        color: #666;
+      }
+      .nav-tabs > li.active > a,
+      .nav-tabs > li > a:hover {
+        border: none;
+      }
+      .nav-tabs > li > a::after {
+        content: "";
+
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 1px;
+        transition: all 250ms ease 0s;
+        transform: scale(0);
+      }
+      .nav-tabs > li.active > a::after,
+      .nav-tabs > li:hover > a::after {
+        transform: scale(1);
+      }
+      .tab-nav > li > a::after {
+        color: #fff;
+      }
+      .tab-pane {
+        padding: 15px 0;
+      }
+      .tab-content {
+        padding: 20px;
+      }
+
+      .nav-tabs::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+      }
+    }
+    .data-scrapping1 {
+      height: 100vh;
+      position: relative;
+      width: 100%;
+      background-image: linear-gradient(
+        to top right,
+        #2531ac,
+        #1c47c0,
+        #2630aa,
+        #1160d8
+      );
+
+      #target {
+        background: #0099cc;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
+
+      .Hide {
+        display: none;
+      }
+      .text-en {
+        text-align: end;
+        position: absolute;
+        right: 0px;
+        justify-items: center;
+        align-items: center;
+        background-color: #2139b2;
+        height: 100%;
+        z-index: 55;
+        width: 70px;
+      }
+      .nature {
+        display: flex;
+        justify-content: center;
+      }
+
+      .datascrap {
+        padding: 42px;
+        margin: auto;
+        padding-top: 0;
+
+        h1 {
+          font-weight: bold;
+          font-size: 62px;
+          color: #fff;
+        }
+        .spientus {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          justify-content: end;
+          grid-template-columns: auto auto;
+        }
+      }
+    }
+  }
+}
+.slider1 {
+  margin-top: 22px;
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .swiper-container {
+    padding-bottom: 20px;
+  }
+
+  .swiper-scrollbar {
+    background: #d6d6d6;
+  }
+
+  .swiper-container-horizontal > .swiper-scrollbar {
+    height: 5px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+
+  .swiper-wrapper img {
+    width: 100%;
+  }
+  .appti {
+    background-color: #1156a7;
+    height: 100%;
+    width: 100%;
+  }
+  .apptimum {
+    padding: 55px;
+    margin: auto;
+    padding-top: 0px;
+  }
+
+  .card {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .card .card_image {
+    padding: 50px;
+    margin: auto;
+  }
+}

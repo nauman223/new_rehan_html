@@ -1,0 +1,356 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tabs-effect {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tabs-effect .nav-tabs1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .tabs-effect .nav-tabs1 {
+    -ms-grid-rows: 50% 50% !important;
+        grid-template-rows: 50% 50% !important;
+  }
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs > li.active > a,
+.tabs-effect .nav-tabs1 .nav-tabs > li.active > a:focus {
+  border-width: 0;
+}
+
+.tabs-effect .nav-tabs1 .data12 {
+  color: white;
+  font-size: 19px;
+}
+
+.tabs-effect .nav-tabs1 .resource {
+  background-color: #ffffff59;
+  opacity: 1.3;
+  border-top-left-radius: 300px;
+  height: 60vh;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs-effect .nav-tabs1 .timeline {
+  margin: 7px 70px;
+}
+
+.tabs-effect .nav-tabs1 .timeline .we-do {
+  position: fixed !important;
+  text-align: end;
+  position: relative;
+  top: 73px;
+  left: 335px;
+  font-size: 73px;
+  color: #000;
+}
+
+.tabs-effect .nav-tabs1 .timeline .nav-tabs {
+  position: fixed !important;
+  border-left: solid 2px orange;
+  height: 225px;
+  position: relative;
+  top: 258px;
+  display: -ms-grid !important;
+  display: grid !important;
+}
+
+.tabs-effect .nav-tabs1 .vertical {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: right top 0;
+          transform-origin: right top 0;
+  right: 99%;
+  color: orange;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: vertical-text;
+  position: absolute;
+  display: block;
+  height: auto;
+  direction: rtl;
+  z-index: 11;
+}
+
+.tabs-effect .nav-tabs1 .text {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  position: absolute;
+  bottom: -142px;
+  height: calc(100% - 40px);
+  left: -24px;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.tabs-effect .nav-tabs1 .text h3 {
+  font-size: 36px;
+}
+
+.tabs-effect .nav-tabs1 .nav > li > a {
+  position: relative;
+  display: block;
+  bottom: 16px;
+  padding: 10px 35px;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs {
+  border: none;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs > li > a {
+  border: none;
+  color: #666;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs > li.active > a,
+.tabs-effect .nav-tabs1 .nav-tabs > li > a:hover {
+  border: none;
+  color: #4285f4 !important;
+  background: transparent;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs > li > a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 1px;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs > li.active > a::after,
+.tabs-effect .nav-tabs1 .nav-tabs > li:hover > a::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.tabs-effect .nav-tabs1 .tab-nav > li > a::after {
+  color: #fff;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li.active > a,
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li.active > a:focus,
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li.active > a:hover {
+  border-width: 0;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li > a {
+  border: none;
+  color: #666;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li.active > a,
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li > a:hover {
+  border: none;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li > a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 1px;
+  -webkit-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li.active > a::after,
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs > li:hover > a::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .tab-nav > li > a::after {
+  color: #fff;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .tab-pane {
+  padding: 15px 0;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .tab-content {
+  padding: 20px;
+}
+
+.tabs-effect .nav-tabs1 .nav-tabs .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#2531ac), color-stop(#1c47c0), color-stop(#2630aa), to(#1160d8));
+  background-image: linear-gradient(to top right, #2531ac, #1c47c0, #2630aa, #1160d8);
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 #target {
+  background: #0099cc;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .Hide {
+  display: none;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .text-en {
+  text-align: end;
+  position: absolute;
+  right: 0px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2139b2;
+  height: 100%;
+  z-index: 55;
+  width: 70px;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .nature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .datascrap {
+  padding: 42px;
+  margin: auto;
+  padding-top: 0;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .datascrap h1 {
+  font-weight: bold;
+  font-size: 62px;
+  color: #fff;
+}
+
+.tabs-effect .nav-tabs1 .data-scrapping1 .datascrap .spientus {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.slider1 {
+  margin-top: 22px;
+}
+
+.slider1 .slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider1 .swiper-container {
+  padding-bottom: 20px;
+}
+
+.slider1 .swiper-scrollbar {
+  background: #d6d6d6;
+}
+
+.slider1 .swiper-container-horizontal > .swiper-scrollbar {
+  height: 5px;
+  width: 200px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.slider1 .swiper-wrapper img {
+  width: 100%;
+}
+
+.slider1 .appti {
+  background-color: #1156a7;
+  height: 100%;
+  width: 100%;
+}
+
+.slider1 .apptimum {
+  padding: 55px;
+  margin: auto;
+  padding-top: 0px;
+}
+
+.slider1 .card {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider1 .card .card_image {
+  padding: 50px;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */
